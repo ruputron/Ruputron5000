@@ -1,0 +1,17 @@
+{
+  "name": "Ruputron5000",
+  "version": "1.0.0",
+  "description": "A custom Twitch bot made for multiple channels with shoutouts, 8ball and more.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "rupu",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "node-fetch": "^2.6.11",
+    "tmi.js": "^1.8.5"
+  }
+}
