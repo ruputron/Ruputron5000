@@ -78,12 +78,6 @@ client.on('message', async (channel, tags, message, self) => {
     return;
   }
 
-  if (command === 'attack') {
-    client.say(channel, '*chews ${tags.usernaame}\'s slippers* OhMyDog');
-    return;
-  }
-
-
   if (command === 'lurk') {
     client.say(channel, `${tags.username} dives into a nearby bush and peeks out inconspicuously!`);
     return;
