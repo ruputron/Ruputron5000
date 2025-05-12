@@ -105,19 +105,6 @@ client.on('message', async (channel, tags, message, self) => {
       return;
     }
 
-    if (soCooldowns[userId] && now - soCooldowns[userId] < cooldownDuration) {
-      const remaining = Math.ceil((cooldownDuration - (now - soCooldowns[userId])) / 1000);
-      client.say(channel, `@${tags.username}, please wait ${remaining} more seconds before using !so again!`);
-      return;
-    }
-
-    soCooldowns[userId] = now;
-
-    if (!(tags.mod || tags.badges?.broadcaster)) {
-      client.say(channel, `@${tags.username}, you don't have permission to use that command!`);
-      return;
-    }
-
     const shoutoutUsername = args[0]?.toLowerCase();
     if (!shoutoutUsername) {
       client.say(channel, `Please provide a username to shout out! Example: !so <username>`);
