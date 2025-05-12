@@ -25,41 +25,12 @@ npm install
 
 3. **Create a `config.js` file**
 
-In the project root, create a `config.js` file (see [Configuration](#-configuration) below for the format).
+In the project root, create a `config.js` file (edit the configtemplate.js file and save as config.js in the root folder)
 
 4. **Start the bot**
 
 ```bash
 npm start
-```
-
-## 🧾 Commands
-
-| Command       | Description                                 |
-|---------------|---------------------------------------------|
-| `!shoutout`   | Shouts out a user (e.g., `!shoutout username`) |
-| `!8ball`      | Returns a random 8ball-style prediction      |
-
-*Only these two commands are currently implemented in code. You can expand the bot by editing `index.js`.*
-
-## ⚙️ Configuration
-
-Create a `config.js` file with the following format:
-
-```js
-// config.js
-export default {
-  identity: {
-    username: 'your_bot_username', // The bot’s Twitch username
-    password: 'oauth:your_oauth_token' // Generate at https://twitchapps.com/tmi/
-  },
-  channels: [
-    'channel1', // Add each channel you want the bot to join
-    'channel2'
-  ],
-  shoutoutPrefix: '!shoutout',
-  eightBallPrefix: '!8ball'
-};
 ```
 
 > 🔐 **Keep your OAuth token private and secure!**
